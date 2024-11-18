@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旷野之息附魔料理查询</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>旷野之息附魔料理查询</h1>
+        <p>选择筛选条件并点击搜索以查看结果</p>
+    </header>
+    <main class="container">
+        <!-- 筛选条件 -->
+        <section class="filters">
+            <h2>筛选条件</h2>
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="filter-盾防">盾防</label>
+                    <select id="filter-盾防" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-盾滑">盾滑</label>
+                    <select id="filter-盾滑" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-速射">速射</label>
+                    <select id="filter-速射" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-狙击">狙击</label>
+                    <select id="filter-狙击" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-多发弓">多发弓</label>
+                    <select id="filter-多发弓" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-投掷">投掷</label>
+                    <select id="filter-投掷" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-暴击">暴击</label>
+                    <select id="filter-暴击" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-耐久">耐久</label>
+                    <select id="filter-耐久" class="filter">
+                        <option value="">全部</option>
+                        <option value="true">支持</option>
+                        <option value="false">不支持</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-强持个数">强持个数</label>
+                    <select id="filter-强持个数" class="filter">
+                        <option value="">全部</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <button id="search-button" class="search-button">搜索</button>
+        <!-- 结果展示 -->
+        <section id="results-section" class="results">
+            <div id="results-cards" class="results-cards"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 旷野之息查询 | <a href="https://space.bilibili.com/364343602" target="_blank">@塞尔达小马</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
